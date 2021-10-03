@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Epic gamer yt.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Toggle Buttons</title>
+    
+</head>
+<body>
+
+
+    <!-- Radio Button of Youtube and instagram -->
+
+    <h2 id="radio-btn">1. Radio button</h2>
+    <form action="" class="radio-border">
+    <p>
+        <input type="radio" id="btn1" name="radio">
+        <label for="btn1">Yes</label>
+    </p>
+    <p>
+        <input type="radio" id="btn2" name="radio">
+        <label for="btn2">No</label>
+    </p>
+    </form>
+
+    <!-- Radio Button of Youtube and instagram End here -->
+
+<!-- button  -->
+
+    <!-- Switch Button On/Off-->
+ 
+    <h2 id="switch-btn">2. Switch Button</h2>
+        <div class="border">
+            <br>
+            <div class="box">
+                <input class="input" type="checkbox" name="" id="">
+                <div class="dot">
+                </div>
+            </div>
+        </div>
+
+    <!-- Switch Button On/Off End here -->
+
+<!-- button  -->
+
+    <!-- Paytm Loading Effect -->
+    
+    <h2 id="paytm-loading-effect">3. Paytm Loading Effect</h2>
+
+    <div class="paytmborder">
+        <button id="button">Upload
+            <div id="animation">
+                <span class="paytm"></span>
+                <span class="paytm"></span>
+                <span class="paytm"></span>
+                <span class="paytm"></span>
+                <span class="paytm"></span>
+            </div>
+        </button>
+    </div>
+    
+    <script>
+        document.getElementById('button').addEventListener("click", function() {
+            this.classList.add("activeLoading");
+        });
+    </script>
+
+    <!-- Paytm Loading Effect End here -->
+
+<!-- button  -->
+
+    <!-- Nuemorphism Icon Button Hover Effect -->
+
+    <h2 id="nuemorphism-btn">4. Nuemorphism Button Effect</h2>
+    <div class="NUEMORPHISM-BACKGROUND">
+    <div class="icons">
+        <a>
+            <i><img src="images/github.png" alt="" style="width:40px; height:40px; border-radius: 50%;"></i>
+        </a>
+        <a>
+            <i><img src="images/Youtube Black icon.png" alt="" style="width:40px; height:40px; border-radius: 50%;"></i>
+        </a>
+        <a>
+            <i><img src="images/Instagram black icon.png" alt="" style="width:40px; height:40px; border-radius: 50%;"></i>
+        </a>
+    </div>
+    </div>
+
+    <!-- Nuemorphism Icon Button Hover Effect End here -->
+
+<!-- button  -->
+
+    <!-- Checkbox Color -->
+
+    <h2 id="accent-color">5. Accent Color Css</h2>
+    <div class="border">
+        <div style="color: white;">
+            <label for="Default">Default</label><input type="checkbox" id="Default">
+            <br>
+            <label for="Accent">Accent</label><input type="checkbox" id="Accent" style="accent-color:red;">
+            <br>
+            <br>
+            <label>Default</label><input type="range" id="Default">
+            <br>
+            <label>Accent</label><input type="range" id="Accent" style="accent-color:red;">
+        </div>
+    </div>
+
+    <!-- Checkbox Color -->
+
+</body>
+</html>

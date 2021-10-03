@@ -1,0 +1,278 @@
+        /* start */
+        body {
+            font-family: Montserrat, sans-serif
+        }
+        h2 {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+
+        /* Radio Button of Youtube and instagram */
+        .radio-border {
+            padding: 50px;
+            margin: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        [type="radio"]:checked + label,
+        [type="radio"]:not(:checked) + label {
+            position: relative;
+            padding-left: 28px;
+            line-height: 20px;
+            cursor: pointer;
+            display: inline-block;
+            color: #ffffff;
+        }
+        [type="radio"]:checked + label:before,
+        [type="radio"]:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+        }
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after
+        {
+            content: '';
+            width: 14px;
+            height: 14px;
+            background: linear-gradient(180deg, #e0e0e0, #5f5f5f);
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-radius: 50%;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+        [type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        [type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked) {
+            position: absolute;
+            left: -99px;
+        }
+        /* Radio Button of Youtube and instagram End here */
+
+
+        /* Switch Button On/Off */
+        .white {
+            color: white;
+        }
+        .border {
+            padding: 50px;
+            margin: 20px;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width: 110px;
+            height: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            -webkit-appearance: none;
+            border-radius: 50px;
+            outline: none;
+            border: 4px solid #eefffc;
+            transition: all 0.4s;
+        }
+        .input::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transform: translate(0);
+            width: 38px;
+            height: 38px;
+            background-color: #eefffc;
+            border-radius: 50px;
+            transition: all 0.4s;
+        }
+        .input:checked::before {
+            transform: translate(158%);
+            background-color: white;
+        }
+        .input:checked {
+            border: 4px solid #eefffc;
+            background-color: #ffae00;
+            box-shadow: 0 0 20px #f0a500, 0 0 50px #f0a500;
+        }
+        .dot {
+            position: absolute;
+            top: 40%;
+            right: -15px;
+            width: 8px;
+            height: 8px;
+            background-color: #eefffc;
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+        .input:checked ~ .dot {
+            background-color: #f0a500;
+            box-shadow: 0px 0px 1px 1px #f0a500;
+        }
+        /* Switch Button On/Off End here*/
+
+
+
+        /* Paytm Loading Effect */
+        .paytmborder {
+            padding: 50px;
+            margin: 20px;
+            background-color: #cecece;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            display: inline-flex;
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-radius: 50%;
+            transform: scale(0);
+            background: #002b73;
+            animation: effect .6s linear infinite alternate;
+        }
+        span:nth-child(1) {
+            animation-delay: .1s;
+        }
+        span:nth-child(2) {
+            animation-delay: .2s;
+        }
+        span:nth-child(3) {
+            animation-delay: .3s;
+        }
+        span:nth-child(4) {
+            animation-delay: .4s;
+            background: #00b9f5;
+        }
+        span:nth-child(5) {
+            animation-delay: .5s;
+            background: #00b9f5;
+        }
+        @keyframes effect {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(0.8);
+            }
+        }
+
+        button {
+            width: 400px;
+            padding: 10px 50px;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            color: #636060;
+            cursor: pointer;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            background: #e7e7e7 ;
+            transition: all 1s;
+        }
+        #animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: 636060;
+            border-radius: inherit;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e7e7e7;
+            transition: all 1s;
+        }
+        button:active {
+            transform: scale(.85);
+        }
+        button.activeLoading #animation {
+            visibility: visible;
+            opacity: 1;
+        }
+        button #animation {
+            visibility: hidden;
+            opacity: 0;
+        }
+        /* Paytm Loading Effect End here */
+
+
+
+        /* NUEMORPHISM ICON BUTTON HOVER EFFECT */
+        .NUEMORPHISM-BACKGROUND {
+            padding: 50px;
+            margin: 20px;
+            background: #d4dbe8;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+        .icons {
+            margin: 2.3em;
+            display: flex;
+        }
+        .icons i {
+            opacity: 1;
+            margin-left: 1.3em;
+            font-size: 1.8em;
+            transition: 0.2s;
+            padding: 0.65em;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: #d4dbe8;
+            box-shadow: -11px -11px 25px rgba(255, 255, 255, 0.35),
+                         11px 13px 25px rgba(165, 181, 208, 0.738227);
+        }
+
+        .icons i:hover {
+            opacity: 1;
+            border-radius: 50%;
+            background: #d4dbe8;
+            transform: scale(1.03);
+            mix-blend-mode: normal;
+            box-shadow: -11px -11px 22px rgba(255, 255, 255, 0.524448),
+                         11px 13px 22px rgba(166, 181, 208, 0.929496),
+                         inset -11px -11px 28px rgba(255, 255, 255, 0.692936),
+                         inset 11px 11px 28px rgba(166, 181, 208, 0.856261);
+        }
+        /* NUEMORPHISM ICON BUTTON HOVER EFFECT END HERE */
